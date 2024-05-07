@@ -13,7 +13,7 @@
         function launchDeepLink() {
             var currentURL = window.location.href; // 獲取當前頁面的網址
             var deepLink = "unitydl://" + encodeURIComponent(currentURL); // 構造DeepLink
-            window.location.href = deepLink; // 導航到DeepLink
+            window.location = deepLink; // 導航到DeepLink
         }
     </script>
 </body>
