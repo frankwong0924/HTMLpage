@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Launch Unity App</title>
+    <script>
+        function launchUnityApp(url) {
+            window.location.href = "unityapp://open?url=" + encodeURIComponent(url);
+        }
+    </script>
+</head>
+<body>
+    <!-- 假設這是收到的URL -->
+    <button onclick="launchUnityApp('http://example.com')">Launch Unity App</button>
+</body>
+</html>
