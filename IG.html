@@ -12,7 +12,7 @@
         // 定義一個函數來動態生成DeepLink並導航到該DeepLink
         function launchDeepLink() {
             var currentURL = window.location.href; // 獲取當前頁面的網址
-            var deepLink = "unitydl://" + encodeURIComponent(currentURL); // 構造DeepLink
+            var deepLink = "unitydl://mylink?" + encodeURIComponent(currentURL); // 構造DeepLink
             window.location = deepLink; // 導航到DeepLink
         }
     </script>
